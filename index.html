@@ -819,7 +819,7 @@
     <button onclick="closeModal()" style="position:absolute; top:16px; right:20px; background:none; border:none; color:#7a90b8; font-size:1.3rem; cursor:pointer; line-height:1;">&#10005;</button>
     <div style="font-size:0.72rem; font-weight:500; letter-spacing:2px; text-transform:uppercase; color:#3d88ff; margin-bottom:12px;">Free Demo</div>
     <h2 style="font-family:'Bricolage Grotesque',sans-serif; font-size:1.8rem; font-weight:800; margin-bottom:8px; letter-spacing:-0.5px;">Let's build your agent.</h2>
-    <p style="color:#7a90b8; font-size:0.9rem; margin-bottom:32px; line-height:1.6;">Fill this out and Elliott will reach out within one business day to schedule your free demo.</p>
+    <p style="color:#7a90b8; font-size:0.9rem; margin-bottom:32px; line-height:1.6;">Fill this out and we will reach out within one business day to schedule your free demo.</p>
 
     <div id="modal-form">
       <div style="display:flex; flex-direction:column; gap:16px;">
@@ -847,7 +847,7 @@
     <div id="modal-success" style="display:none; text-align:center; padding:20px 0;">
       <div style="font-size:3rem; margin-bottom:16px;">&#127881;</div>
       <h3 style="font-family:'Bricolage Grotesque',sans-serif; font-size:1.4rem; font-weight:800; margin-bottom:12px;">You're on the list!</h3>
-      <p style="color:#7a90b8; font-size:0.9rem; line-height:1.6;">Elliott will reach out within one business day. Check your inbox — something good is coming.</p>
+      <p style="color:#7a90b8; font-size:0.9rem; line-height:1.6;">We will reach out within one business day. Check your inbox — something good is coming.</p>
       <button onclick="closeModal()" style="margin-top:24px; background:#f97316; color:#fff; border:none; border-radius:8px; padding:12px 28px; font-size:0.9rem; font-weight:500; cursor:pointer; font-family:'DM Sans',sans-serif;">Back to Site</button>
     </div>
   </div>
@@ -1079,13 +1079,13 @@ function sendEmail(withSubject) {
       botMsg("Perfect! And what type of business do you have? For example: Dental Office, HVAC, Med Spa...");
       step = 'business';
     } else if (step  === 'business') {
-      botMsg("Awesome! Elliott will reach out within one business day to confirm your demo time. You are going to love what we can build for you!");
+      botMsg("Awesome! We will reach out within one business day to confirm your demo time. You are going to love what we can build for you!");
       setTimeout(function() {
         setQR(["Ask another question", "Not right now"]);
       }, 1800);
       step = 'done';
     } else {
-      botMsg("Great question! For the quickest answer, book a demo with Elliott and he will walk you through everything live.");
+      botMsg("Great question! For the quickest answer, book a demo with us and we will walk you through everything live.");
       setTimeout(function() {
         setQR(["Book a Free Demo", "Ask another question"]);
       }, 1500);
